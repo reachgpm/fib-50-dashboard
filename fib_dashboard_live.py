@@ -16,7 +16,7 @@ fib_level = 0.5
 refresh_seconds = 300  # refresh every 5 minutes
 
 # LOAD TICKERS
-tickers = pd.read_csv("C:\\Users\\gpm_i\\pythonscripts\\optionable_stocks.csv", header=None)[0].tolist()
+tickers = pd.read_csv("optionable_stocks.csv", header=None)[0].tolist()
 
 # FUNCTION TO CHECK FIB TOUCH
 def check_fib_touch(ticker):
@@ -77,3 +77,4 @@ while True:
 
         st.write(f"Next refresh in {refresh_seconds//60} minutes...")
         time.sleep(refresh_seconds)
+
